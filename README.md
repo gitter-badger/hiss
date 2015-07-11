@@ -1,5 +1,7 @@
 # hiss
 
+[![Join the chat at https://gitter.im/adituv/hiss](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/adituv/hiss?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 HISS is the Haskell Interface for Simple Syndication, an RSS reader
 written in Haskell.
 
