@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <!-- required -->
+    <title>Channel's Name</title>
+    <link>Url of html website that corresponds to the channel</link>
+    <description>Description</description>
+
+    <!-- optional -->
+    <language>en-gb</language>
+    <copyright>Copyright 2015, Iris Ward</copyright>
+    <managingEditor>
+      Email address of person responsible for editorial content.
+    </managingEditor>
+    <webMaster>
+      Email address of person responsible for technical issues relating
+      to the channel.
+    </webMaster>
+    <pubDate>The publication date &amp; time of channel's content.</pubDate>
+    <lastBuildDate>The last time the content changed</lastBuildDate>
+    <category>First category</category>
+    <category domain="d">Second category, in indexing system 'd'</category>
+    <generator>The program used to generate the file</generator>
+    <docs>A URL to RSS2.0 documentation</docs>
+    <!-- RPC for channel updates -->
+    <cloud domain="a.b.com" port="345" path="/RPC2"
+      register-Procedure="pingMe" protocol="soap" />
+    <ttl>Time in minutes until channel must be refreshed</ttl>
+    <image>
+      <!-- Required -->
+      <url>URL of a gif, jpg or png image</url>
+      <title>Description of the image, normally just title of site</title>
+      <link>URL of the originating site of the RSS</link>
+
+      <!-- Optional -->
+      <width>Width between 88 and 144 (in pixels)</width>
+      <height>Height between 31 and 400 (in pixels)</height>
+      <description>Description of the image in full</description>
+    </image>
+    <rating>The PICS rating for the channel</rating>
+    <textInput>A mysterious text input area.  Ignore.</textInput>
+    <skipHours>
+      <!-- The channel may not be read by an aggregator from 11am-12pm or
+           from 1pm-2pm -->
+      <hour>11</hour>
+      <hour>13</hour>
+    </skipHours>
+    <skipDays>
+      <!-- The channel may not be read by an aggregator on Sundays -->
+      <day>Sunday</day>
+    </skipDays>
+
+    <!-- End of channel's header elements -->
+    <item>
+      <!-- All optional.  Minimum: (title|description) -->
+      <title>Item's title</title>
+      <link>URL item links to</title>
+      <description>A short synopsis of the item</description>
+      <author>Email address of the item's author</author>
+      <category domain="d">A category for the item</category>
+      <category>Another category</category>
+      <comments>URL of a comments page for the item</comments>
+      <enclosure url="http://a.b.com/media.mp3" type="mime/type"
+        length="length in bytes" />
+      <guid isPermaLink="false">A unique id for the item</guid>
+      <!-- if isPermaLink="true", then it's a link to the item's page
+           on some website -->
+      <pubDate>Date the item was published</pubDate>
+      <source url="url-of-rss-feed">RSS feed title</source>
+    </item>
+
+  </channel>
+</rss>
